@@ -1,0 +1,20 @@
+1. The 'for in' loop is the 'long way home' when creating for loops for iterating through arrays
+2.Its always best and most efficient to use a basic for loop for arrays
+3.When creating the length property on a variable within a string inside a 'for' loop, there is no way of knowing what engine will be used to optimize and cache each iterization... no way of knowing how fast the cacheing process will take.
+4.Best to always us literals when creating an array '[]'
+5. When creating an array with only one iteration and when that iteration is a number, only the length property will cache this information.
+6.using '==' is defined as 'weak-typing' because it coerces the result to be a true statement.
+7.Using '==' is considered bad practice in JS and leads to errors in code.
+8.using '===' is 'strict' and therefore a precise operand that does not coerce its value
+9.When using '===' errors appear earlier in code and are less likely to have deeply nested errors.
+10.The only time a coder should consider using the '==' operator is when they explicitly understand all of the JS coersion rules that will apply.
+11.Author considers 'typeof' to be a design flaw of the JS language because it does not strictly/reliably define the 'type-of' Class of an object.
+12.'typeof' is only useful to find out if a variable has been declared.
+13. It is best to use Object.prototype.toString to find the 'type-of' an object.
+14.Avoid using 'instanceof' operator unless on a custom made object.
+15. There are better ways to find the 'type of' or 'instance of' and object than there namesakes.
+16.Because JS is considered a weakly typed language, it will attempt to coerce values into truthiness.... so, always use strict operators and force JS to behave.
+17.When using the not operator '!' twice '!!' a value will be converted to a boolean (unless there is no value)
+18.When casting a value (+10) to an empty string you can create a stricter form of coersion while using the '===' operator.
+19. '10'=== 10 is false; however, when using the '+' operator +'10' === 10 is true.
+20. 
