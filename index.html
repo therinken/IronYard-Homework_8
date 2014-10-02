@@ -59,6 +59,34 @@
             </script>
 
             <li>Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".</li>
+            <script type="text/javascript">
+            /*function rovarspraket(phrase) {
+                "use strict";
+                return phrase.split("").map(function(letter) {
+                    /**
+                     * letter in each iteration is a character,
+                     * we test this character whether it is a consonant,
+                     * if so, return letter+'o'+letter
+                     * else, just return letter
+                     * @type {String}
+                     *
+                    return "aeiouAEIOU \"'/\\".indexOf(letter) >= 0 ? letter : letter + "o" + letter;
+
+                }).join("");
+            }*/
+
+            function rovarspraket(phrase) {
+                var resultArray = "";
+
+                for (var i = 0; i < phrase.length; i++) {
+                    resultArray +=
+                        "aeiouAEIOU \"'/\\".indexOf(phrase[i]) >= 0 ? phrase[i] : phrase[i] + "o" + phrase[i];
+                }
+
+                return resultArray;
+            }
+            console.log(rovarspraket('I am a robot'))
+            </script>
 
 
             <li>Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.</li>
@@ -90,9 +118,6 @@
             <li>Write a function findLongestWord() that takes an array of words and returns the length of the longest one.</li>
             <script type="text/javascript">
             /**
-             * couldn't figure this out
-             * found this on http://jsbin.com/ahANarU/2/edit
-             
             function findLongestWord(words) {
                 var array1 = words.match(/\w[a-z]{0,}/gi);
                 var result = array1[0];
@@ -108,11 +133,20 @@
             </script>
 
             <li>Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.</li>
-            <code></code>
             <script type="text/javascript">
             function filterLongWords(words, i) {
                 "use strict";
+                var array1 = words.match(/\w[a-z]{0,}/gi);
+                var result = array1[0];
+
+                for (var i = 1; i < array1.length; i++) {
+                    if (result.length < array1[i].length) {
+                        result = array1[i];
+                    }
+                }
+                return result;
             }
+            console.log(filterLongWords("I am a human"));
             </script>
 
             <li>Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").</li>
