@@ -89,25 +89,31 @@
 
             <li>Write a function findLongestWord() that takes an array of words and returns the length of the longest one.</li>
             <script type="text/javascript">
-            var myArray = ["java", "javascript", "jquery"];
+            /**
+             * 
+             * found this on http://jsbin.com/ahANarU/2/edit
+             */
             function findLongestWord(words) {
-                var str = words.split(" ");
-                var longest = 0;
-                var word = null;
-                for(var i = 1; i < str.length; i++){
-                    if (longest < str[i].length){
-                        longest = str[i].length;
-                        word = str[i];
+                var array1 = words.match(/\w[a-z]{0,}/gi);
+                var result = array1[0];
+
+                for (var i = 1; i < array1.length; i++) {
+                    if (result.length < array1[i].length) {
+                        result = array1[i];
                     }
                 }
-                 
+                return result;
             }
-           console.log(longest);
+            console.log(findLongestWord('Kenneth Daniel McLeod'));
             </script>
 
             <li>Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.</li>
-            <code>function filterLongWords(words, i) { "use strict"; //... }
-            </code>
+            <code></code>
+            <script type="text/javascript">
+            function filterLongWords(words, i) {
+                "use strict";
+            }
+            </script>
 
             <li>Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").</li>
 
