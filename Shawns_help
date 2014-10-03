@@ -11,41 +11,46 @@ function testFreq(string){
 }
 
 
-// THE OBJECT 'characters' IS EMPTY 
+// THE OBJECT 'characters' IS EMPTY
 
-	---> Look at the 'characters' variable on the 2nd line... see the empty {}? Thats like saying that this variable is ready and willing for a purpose. Its a thing without a purpose. And you, the coder, created it because you understand that in order for things to happen they need a body... they need to be an object. Right now this is a variable with hopes of becoming an object so it can do something special.
+---> Look at the 'characters' variable on the 2nd line... see the empty {}? Thats like saying that this variable is ready and willing for a purpose. Its a thing without a purpose. And you, the coder, created it because you understand that in order for things to happen they need a body... they need to be an object. Right now this is a variable with hopes of becoming an object so it can do something special.
 
-// WE COULD PASS IN A STRING CALLED "hello" INSIDE THE CURLY BRACKETS 
+// WE COULD PASS IN A STRING CALLED "hello" INSIDE THE CURLY BRACKETS
 
-	--->But, for now, its like geting all dressed up with nowhere to go. It might feel nice and it could be argued that it has it's own inherent value, but it might just be better to leave it in an undefined state... '{}' So, for now, the realization that we can and will put purpose into this objective variable is suffice.
+--->But, for now, its like geting all dressed up with nowhere to go. It might feel nice and it could be argued that it has it's own inherent value, but it might just be better to leave it in an undefined state... '{}' So, for now, the realization that we can and will put purpose into this objective variable is suffice.
 
-// LET'S SET THE OBJECT 'characters' EQUAL TO UNDEFINED  
+// LET'S SET THE OBJECT 'characters' EQUAL TO UNDEFINED
 
-	---> So, did you get that? The variable we called 'characters' up above is a variable, oh yes! but it's also an object! And thats important because a variable that is an object has capacities (properties) that are available to it while it ('characters') is in an objective state!
+---> So, did you get that? The variable we called 'characters' up above is a variable, oh yes! but it's also an object! And thats important because a variable that is an object has capacities (properties) that are available to it while it ('characters') is in an objective state!
 
-// DOES THE 'characters' OBJECT HAVE A PROPERTY THAT IS EQUAL TO THE VALUE OF "hello" AT INDEX THAT IS EQUAL TO 0 WHICH IS ALSO 'h'?  
+// DOES THE 'characters' OBJECT HAVE A PROPERTY THAT IS EQUAL TO THE VALUE OF "hello" AT INDEX THAT IS EQUAL TO 0 WHICH IS ALSO 'h'?
 
-	---> Not yet right? I mean, if we choose to insert a purpose (argument) into the 'characters' object, like say "hello", and if we thought of that argument as also being a string.... we could also then perceive this string as being indexable --- which is to say, that every character and space in a string has a positional value .... So, h = 0, e=1, l=2, l=3, and o=4.
+---> Not yet right? I mean, if we choose to insert a purpose (argument) into the 'characters' object, like say "hello", and if we thought of that argument as also being a string.... we could also then perceive this string as being indexable --- which is to say, that every character and space in a string has a positional value .... So, h = 0, e=1, l=2, l=3, and o=4.
 
-// THERE IS NO PROPERTY 'h' IN OUR 'characters' OBJECT SO LET'S DEFINE IT AND SET IT EQUAL TO A VALUE OF 1 
+// THERE IS NO PROPERTY 'h' IN OUR 'characters' OBJECT SO LET'S DEFINE IT AND SET IT EQUAL TO A VALUE OF 1
 
-	---> Well... we are the creators of 'characters' right? It goes to figure that we can define how we want our newly created object to behave right? And, if we choose to name that behavior 'hello' than at least one property of the 'characters' object is definitely 'h' right? Yes......but, wait a friggin' minute! You can't say that h = 1 when we just finished saying that h = 0, right? I mean, the positional indexing makes sense but how is this logical? Well... say if you wanted your new object to be more than just a stagnant/static/motionless being. Well then it only goes to figure that you have to create a state of motion right?... So, yes, h = 0, but if we want our little creation to ever see the light, then we must imbue him with a purpose beyond his original state... h = 1. So, we create a program that forces our object to do something!
+---> Well... we are the creators of 'characters' right? It goes to figure that we can define how we want our newly created object to behave right? And, if we choose to name that behavior 'hello' than at least one property of the 'characters' object is definitely 'h' right? Yes......but, wait a minute!
+
+You can't say that h = 1 when we just finished saying that h = 0, right? I mean, the positional indexing makes sense but how is this logical?
+
+Well... say if you wanted your new object to be more than just a stagnant/static/motionless being. Well then it only goes to figure that you have to create a state of motion right?... So, yes, h = 0, but if we want our little creation to ever see the light, then we must imbue him/her with a purpose beyond his/her original state... h = 1. So, we create a program that forces our object to do something!
 
 // LOOP AGAIN WITH 'i' EQUAL TO 1
 
-	---> On line 4, we give our object an active purpose by stating where its at and where it will go 
+---> On line 4, we give our object an active purpose by stating where its at and where it will go... 
 					var i=0; i < string.length; i++ 
 	Let's think about this for a second, pull it apart and figure out what it might mean? 
- 	First off, turns out, the 'i' is another undefined variable. This variable is being created for one purpose which is to give our bored, undefined variable object (that might be called 'hello' at some point) a place to start moving: i = 0 ... all things are nothing before they are something. And then, we have: 						i < string.length
- 	Our starting point is nothingness and clearly, our variable is 'less than' string.length, see up there on Line 1... 
+First off, the 'i' is a variable that is equal to 0. This variable is being created for one purpose, which is to give our bored, undefined variable object ('characters') a place to start moving: i = 0 (all things are nothing before they are something). And then, we have: i < string.length
+
+So, our starting point is nothingness and our variable 'i' is 'less than' (<) string.length, ...but, then...what is string referring to? 
  				--- function testFreq(string) --- 
- 	That word 'string' is called an argument and its not the same thing as a string ("A set of words wrapped in quotes"). Truth is, we just made it up and we also made the word 'testFreq' up too. 'function' is the only thing up there on Line 1 that wasn't self generated. And.... FUNCTIONS ARE FIRST CLASS CITIZENS! (and don't you forget it!) But really, what is that supposed to mean? I don't really know yet... but I'm guessing that a 'function' can do anything and has self inherent rights in the JS universe. Which I suppose is another way of saying that JS is written with functions at the foundation of its script. Well, anyhow, that word 'string' inside the round brackets is the same one in 'string.length' the .length is an action that is part of the JS behavior library. So, we're saying that the argument called 'string' that is native to the testFreq 'function' is being given the capacity to adopt the wisdom of 'length' and that wisdom is greater than the nothingness where our 'i' variable has been declared... who, in his own humble way, is setting the ground for our 'characters' object to grow from. And lastly, 
+ 	The word 'string' inside the round brackets is the same one in 'string.length' and the '.length' part is an action that is part of the JS Array library. So, we're saying that the argument called 'string', that is native to the testFreq 'function', is being given the capacity to adopt the wisdom of 'length' and that wisdom is greater than the nothingness where our 'i' variable has been declared. Who, in his own humble way, is setting the ground for our 'characters' object to grow from. And, finally, at the end of this statement, there is an 'i++'. 
  						--- i++ ---
- 	our 'i' variable is expanding the area by which our 'characters' object can grow within. 'i' shall expand by doubling itself over and over again until it has reached the length of 'string'...which has not yet been declared (...hello! I love ya can ya tell me your name?)
+ 	... our 'i' variable is expanding the area by which our 'characters' object can grow within. 'i' shall expand by doubling itself over and over again until it has reached the length of 'string'...which has not yet been declared (...hello!)
 
 // DOES THE 'characters' OBJECT HAVE A PROPERTY THAT IS EQUAL TO THE VALUE OF HELLO AT INDEX EQUAL TO 1 WHICH IS H?
 
-	---> Yes, this property is defined and has a value equal to 1, so set the value of the 'characters' object whose property is the same as the value of the string at index=1 (which is also h) and let's increment it by 1. So now this property (which is h) is equal to 2.
+---> Yes, this property is defined and has a value equal to 1, so set the value of the 'characters' object whose property is the same as the value of the string at index=1 (which is also h) and let's increment it by 1. So now this property (which is h) is equal to 2.
 
 //THE PROGRAM .... {
 
