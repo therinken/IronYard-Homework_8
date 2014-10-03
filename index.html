@@ -117,9 +117,8 @@
 
             <li>Write a function findLongestWord() that takes an array of words and returns the length of the longest one.</li>
             <script type="text/javascript">
-            
             function findLongestWord(words) {
-                var array1 = words.match(/\w[a-z]{0,}/gi);
+                var array1 = words.match(/\w{0,}/gi);
                 var result = array1[0];
 
                 for (var i = 1; i < array1.length; i++) {
@@ -136,7 +135,7 @@
             <script type="text/javascript">
             function filterLongWords(words, i) {
                 "use strict";
-                var array1 = words.match(/\w[a-z]{0,}/gi);
+                var array1 = words.match(/\w{0,}/gi);
                 var result = array1[0];
 
                 for (var i = 1; i < array1.length; i++) {
@@ -151,8 +150,20 @@
 
             <li>Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").</li>
 
-            <code>function charFreq(string) { "use strict"; //... }
-            </code>
+            <script type="text/javascript">
+            function testFreq(string) {
+                var characters = {};
+
+                for (var i = 0; i < string.length; i++) {
+
+                    characters[string[i]] =
+                        (characters[string[i]] === undefined) ?
+                        1 :
+                        characters[string[i]] + 1;
+                }
+                return characters;
+            }console.log(testFreq("abbabcbdbabdbdbabababcbcbab"))
+            </script>
         </ol>
     </div>
 </body>

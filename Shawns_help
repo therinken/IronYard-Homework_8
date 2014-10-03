@@ -1,0 +1,47 @@
+function testFreq(string){
+    var characters = {};
+
+    for (var i=0; i<string.length; i++){
+
+        characters[string[i]] = 
+            (characters[string[i]] === undefined) ?
+            1 : characters[string[i]]+1;
+    }
+    return characters;    
+}
+
+
+// THE OBJECT 'characters' IS EMPTY 
+
+	---> Look at the 'characters' variable on the 2nd line... see the empty {}? Thats like saying that this variable is ready and willing for a purpose. Its a thing without a purpose. And you, the coder, created it because you understand that in order for things to happen they need a body... they need to be an object. Right now this is a variable with hopes of becoming an object so it can do something special.
+
+// WE COULD PASS IN A STRING CALLED "hello" INSIDE THE CURLY BRACKETS 
+
+	--->But, for now, its like geting all dressed up with nowhere to go. It might feel nice and it could be argued that it has it's own inherent value, but it might just be better to leave it in an undefined state... '{}' So, for now, the realization that we can and will put purpose into this objective variable is suffice.
+
+// LET'S SET THE OBJECT 'characters' EQUAL TO UNDEFINED  
+
+	---> So, did you get that? The variable we called 'characters' up above is a variable, oh yes! but it's also an object! And thats important because a variable that is an object has capacities (properties) that are available to it while it ('characters') is in an objective state!
+
+// DOES THE 'characters' OBJECT HAVE A PROPERTY THAT IS EQUAL TO THE VALUE OF "hello" AT INDEX THAT IS EQUAL TO 0 WHICH IS ALSO 'h'?  
+
+	---> Not yet right? I mean, if we choose to insert a purpose (argument) into the 'characters' object, like say "hello", and if we thought of that argument as also being a string.... we could also then perceive this string as being indexable --- which is to say, that every character and space in a string has a positional value .... So, h = 0, e=1, l=2, l=3, and o=4.
+
+// THERE IS NO PROPERTY 'h' IN OUR 'characters' OBJECT SO LET'S DEFINE IT AND SET IT EQUAL TO A VALUE OF 1 
+
+	---> Well... we are the creators of 'characters' right? It goes to figure that we can define how we want our newly created object to behave right? And, if we choose to name that behavior 'hello' than at least one property of the 'characters' object is definitely 'h' right? Yes......but, wait a friggin' minute! You can't say that h = 1 when we just finished saying that h = 0, right? I mean, the positional indexing makes sense but how is this logical? Well... say if you wanted your new object to be more than just a stagnant/static/motionless being. Well then it only goes to figure that you have to create a state of motion right?... So, yes, h = 0, but if we want our little creation to ever see the light, then we must imbue him with a purpose beyond his original state... h = 1. So, we create a program that forces our object to do something!
+
+// LOOP AGAIN WITH 'i' EQUAL TO 1
+
+	---> On line 4, we give our object an active purpose by stating where its at and where it will go 
+					var i=0; i < string.length; i++ 
+	Let's think about this for a second, pull it apart and figure out what it might mean? 
+ 	First off, turns out, the 'i' is another undefined variable. This variable is being created for one purpose which is to give our bored, undefined variable object (that might be called 'hello' at some point) a place to start moving: i = 0 ... all things are nothing before they are something. And then, we have: 						i < string.length
+ 	Our starting point is nothingness and clearly, our variable is 'less than' string.length, see up there on Line 1... 
+ 				--- function testFreq(string) --- 
+ 	That word 'string' is called an argument and its not the same thing as a string ("A set of words wrapped in quotes"). Truth is, we just made it up and we also made the word 'testFreq' up too. 'function' is the only thing up there that wasn't 
+
+// DOES THE 'characters' OBJECT HAVE A PROPERTY THAT IS EQUAL TO THE VALUE OF HELLO AT INDEX EQUAL TO 1 WHICH IS H?
+
+	---> Yes, this property is defined and has a value equal to 1, so set the value of the 'characters' object whose property is the same as the value of the string at index=1 (which is also h) and let's increment it by 1. So now this property (which is h) is equal to 2.
+
