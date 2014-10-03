@@ -39,9 +39,20 @@ function testFreq(string){
  	First off, turns out, the 'i' is another undefined variable. This variable is being created for one purpose which is to give our bored, undefined variable object (that might be called 'hello' at some point) a place to start moving: i = 0 ... all things are nothing before they are something. And then, we have: 						i < string.length
  	Our starting point is nothingness and clearly, our variable is 'less than' string.length, see up there on Line 1... 
  				--- function testFreq(string) --- 
- 	That word 'string' is called an argument and its not the same thing as a string ("A set of words wrapped in quotes"). Truth is, we just made it up and we also made the word 'testFreq' up too. 'function' is the only thing up there that wasn't 
+ 	That word 'string' is called an argument and its not the same thing as a string ("A set of words wrapped in quotes"). Truth is, we just made it up and we also made the word 'testFreq' up too. 'function' is the only thing up there on Line 1 that wasn't self generated. And.... FUNCTIONS ARE FIRST CLASS CITIZENS! (and don't you forget it!) But really, what is that supposed to mean? I don't really know yet... but I'm guessing that a 'function' can do anything and has self inherent rights in the JS universe. Which I suppose is another way of saying that JS is written with functions at the foundation of its script. Well, anyhow, that word 'string' inside the round brackets is the same one in 'string.length' the .length is an action that is part of the JS behavior library. So, we're saying that the argument called 'string' that is native to the testFreq 'function' is being given the capacity to adopt the wisdom of 'length' and that wisdom is greater than the nothingness where our 'i' variable has been declared... who, in his own humble way, is setting the ground for our 'characters' object to grow from. And lastly, 
+ 						--- i++ ---
+ 	our 'i' variable is expanding the area by which our 'characters' object can grow within. 'i' shall expand by doubling itself over and over again until it has reached the length of 'string'...which has not yet been declared (...hello! I love ya can ya tell me your name?)
 
 // DOES THE 'characters' OBJECT HAVE A PROPERTY THAT IS EQUAL TO THE VALUE OF HELLO AT INDEX EQUAL TO 1 WHICH IS H?
 
 	---> Yes, this property is defined and has a value equal to 1, so set the value of the 'characters' object whose property is the same as the value of the string at index=1 (which is also h) and let's increment it by 1. So now this property (which is h) is equal to 2.
+
+//THE PROGRAM .... {
+
+        characters[string[i]] = 
+            (characters[string[i]] === undefined) ?
+            1 : characters[string[i]]+1;
+    }
+
+
 
